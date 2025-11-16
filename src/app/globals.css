@@ -1,26 +1,85 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-family-outfit: var(--font-outfit);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --ring: 262.1 83.3% 57.8%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --animate-spin: spin 5s linear infinite;
   }
 }
 
+* {
+  border-color: hsl(var(--color-border));
+  outline-color: hsl(var(--color-ring) / 50%);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
+  font-family: var(--font-outfit);
+}
+
+.animated-wrapper {
+  display: inline-flex;
+  animation: slideFade 0.6s ease-in-out;
+}
+
+.animated-word,
+.animated-icon {
+  animation: slideFade 0.6s ease-in-out;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 15s linear infinite;
 }
