@@ -14,7 +14,7 @@ const work = [
     title: "IUT de Ngaoundéré",
     description: "Web Developer Intern",
     image: "/images/IUT.png",
-    link: "https://site.iut-ndere.net/",
+    link: "/",
     duration: "April 2025 - July 2025",
   },
   {

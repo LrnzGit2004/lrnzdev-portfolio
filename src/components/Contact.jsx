@@ -81,7 +81,7 @@ const Contact = () => {
             type="text"
             disabled
           />
-          <button className="bg-[#6D28D9] text-white rounded-full h-11 mr-1 px-10 flex items-center justify-center hover:bg-[#6D28D9] active:scale-95 transition">
+          <button className="bg-[#6D28D9] text-white rounded-full h-11 mr-1 px-8 flex items-center justify-center hover:bg-[#6D28D9] active:scale-95 transition">
             join !
           </button>
         </div>
