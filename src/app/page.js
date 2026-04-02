@@ -4,6 +4,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import MockupResultPage from "@/components/Mockup";
 import SectionTitle from "@/components/SectionTitle";
 import Skills from "@/components/Skills";
 import React from "react";
@@ -21,6 +22,7 @@ const page = () => {
       <SectionTitle title="Get in touch" className="mt-20" />
       <Contact />
       <Footer />
+      {/* <MockupResultPage /> */}
     </>
   );
 };
