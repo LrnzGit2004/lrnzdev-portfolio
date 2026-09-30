@@ -22,7 +22,7 @@ const References = () => {
         </div>
         <SquareArrowOutUpRightIcon className="w-4 h-4 mr-2 group-hover:translate-x-1 transition duration-300" />
       </Link>
-      {/* <Link
+      <Link
         href="/"
         className="border border-[#1F2937]! backdrop-blur-[300px] rounded-xl p-2 flex  items-center   justify-between cursor-pointer hover:bg-[#6D28D9]/10 transition-all duration-300 group"
       >
@@ -36,12 +36,12 @@ const References = () => {
               </h3>
             </div>
             <p className="text-sm font-light text-[#99a9be] ">
-              IUT of Ngaoundéré
+              IUT of Ngaoundéré | Director of ARLEI Sarl
             </p>
           </div>
         </div>
         <SquareArrowOutUpRightIcon className="w-4 h-4 mr-2 group-hover:translate-x-1 transition duration-300" />
-      </Link> */}
+      </Link>
       <Link
         href="/"
         className="border border-[#1F2937]! backdrop-blur-[300px] rounded-xl p-2 flex  items-center   justify-between cursor-pointer hover:bg-[#6D28D9]/10 transition-all duration-300 group"
