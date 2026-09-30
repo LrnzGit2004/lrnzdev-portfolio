@@ -24,7 +24,7 @@ const projects = [
     title: "Site web de l'IUT de Ngaoundéré",
     description:
       "L'IUT de Ngaoundéré avait bien de besoin de faire peau neuve. Avec ce nouveau site, elle pourra tenir ses partenaires à jours des dernières actualités...",
-    link: "#",
+    link: "https://site.iut-ndere.net",
   },
   {
     thumbnail: "/images/mockup-logo-crea.png",
