@@ -3,12 +3,19 @@ import React from "react";
 import { Badge } from "./ui/badge";
 
 const work = [
+{
+    title: "ARLEI Sarl",
+    description: "Front-end Developer | UI/UX Designer",
+    image: "/images/wenschool.jpg",
+    link: "https://arlei.site",
+    duration: "jan 2026 - currently",
+  },
   {
     title: "WenSchool",
     description: "Front-end Developer",
     image: "/images/wenschool.jpg",
     link: "https://wenschool.wenix.net/",
-    duration: "2024 - currently",
+    duration: "2024 - 2025",
   },
   {
     title: "IUT de Ngaoundéré",
